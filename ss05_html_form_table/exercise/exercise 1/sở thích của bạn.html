@@ -1,10 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:color="http://www.w3.org/1999/xhtml">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>FORM SỞ THÍCH</title>
 </head>
-<body>
-$END$
+<body style="background-color: aqua">
+
+ <div style = "background-color: red; text-align: center; display: flex; justify-content: center; align-content: center" >
+    <h1> <span style = "color: white"> SỞ THÍCH CỦA BẠN</span></h1> <br><br>
+ </div>
+<form>
+    <div style = "background-color: white; margin-bottom:10px" >
+         <label for="name" style="color: blue">Họ và tên: </label>
+         <input type="text" id="name" name="name" placeholder="Your name" required><br><br>
+
+         <label for="email" style="color: blue">Email: </label>
+         <input type="text" id="email" name="email" placeholder="email@example.com" autofocus/><br><br>
+
+        <label for="favourite" style="color: blue">Sở thích: </label>
+        <input type="checkbox" id="Thể thao" name="favorite" value="Thể thao">
+        <label for="Thể thao" style="color: red;">Thể thao</label>
+        <input type="checkbox" id="Âm Nhạc" name="favorite" value="Âm nhạc">
+        <label for="Âm nhạc" style="color: red;">Âm nhạc</label>
+        <input type="checkbox" id="Đọc sách" name="favorite" value="Đọc sách">
+        <label for="Đọc sách" style="color: red;">Đọc sách</label><br>
+        <input type="checkbox" id="Lướt web" name="favorite" value="Lướt web">
+        <label for="Lướt web" style="color: red;">Lướt web</label>
+        <input type="checkbox" id="Chơi game" name="favorite" value="Chơi game">
+        <label for="Chơi game" style="color: red;">Chơi game</label>
+        <input type="checkbox" id="Điện ảnh" name="favorite" value="Điện ảnh">
+        <label for="Điện ảnh" style="color: red;">Điện ảnh</label><br>
+        <input type="checkbox" id="Du lịch" name="favorite" value="Du lịch">
+        <label for="Du lịch" style="color: red;">Du lịch</label><br><br>
+
+        <input type="submit" value="Gửi thông tin">
+        <input type="submit" value="Nhập lại"><br>
+
+    </div>
+
+</form>
 </body>
 </html>

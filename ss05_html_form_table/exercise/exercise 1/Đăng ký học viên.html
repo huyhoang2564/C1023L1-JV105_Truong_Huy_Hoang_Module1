@@ -1,10 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:color="http://www.w3.org/1999/xhtml">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>FORM SỞ THÍCH</title>
 </head>
-<body>
-$END$
+<body style="background-color: bisque">
+
+<div style = "background-color: aqua; text-align: center; display: flex; justify-content: center; align-content: center" >
+    <h1> <span style = "color: blue"> SỞ THÍCH CỦA BẠN</span></h1> <br><br>
+</div>
+<form>
+
+        <label for="name">Họ và tên: </label>
+        <input type="text" id="name" name="name" placeholder="Your name" required><br><br>
+
+        <label for="birthday"> Ngày sinh: </label>
+        <input type="date" id="birthday" name="birthday" autofocus/><br><br>
+
+        <label for="gender"> Giới tính: </label>
+        <input type="radio" id="gender" name="gender" value="Nam"> Nam
+        <input type="radio" id="genderFemale" name="gender" value="Nữ"> Nữ <br><br>
+
+        <label for="address"> Địa chỉ: </label>
+        <input type="text" id="address" name="address"><br><br>
+
+        <label for="lop">Lớp:</label>
+        <select id="lop" name="Lớp"> Danh sách lớp
+            <option>Lớp 1</option>
+            <option>Lớp 2</option>
+            <option>Lớp 3</option>
+            <option>Lớp 4</option>
+            <option>Lớp 5</option>
+            <option>Lớp 6</option>
+            <option>Lớp 7</option>
+            <option>Lớp 8</option>
+            <option>Lớp 9</option>
+            <option>Lớp 10</option>
+            <option>Lớp 11</option>
+            <option>Lớp 12</option>
+        </select><br><br>
+
+        <label for="email">Email: </label>
+        <input type="text" id="email" name="email" placeholder="email@example.com" autofocus/><br><br>
+
+        <label for="phonenumber"> Số điện thoại: </label>
+        <input type="number" id="phonenumber" name="phonenumber"><br><br>
+
+
+        <input type="submit" value="Đăng ký">
+        <input type="submit" value="Nhập lại"><br>
+
+</form>
 </body>
 </html>
