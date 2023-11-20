@@ -1,10 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Tính giá điện</title>
 </head>
 <body>
-$END$
+<form>
+    <h2>Tính giá điện</h2>
+
+    <label for="soDien">Nhập số điện tiêu thụ (kWh):</label>
+    <input type="number" id="soDien" step="0.01"><br><br>
+
+    <button onclick="tinhGiaDien()" type="button">Tính giá</button>
+</form>
+
+<p id="ketQua"></p>
+
+<script>
+    function tinhGiaDien() {
+        let soDien = parseFloat(document.getElementById("soDien").value);
+        let giaDien = 0;
+
+        if (soDien <= 50) {
+            giaDien = soDien * 1500;
+        } else if (soDien <= 100) {
+            giaDien = 50 * 1500 + (soDien - 50) * 2000;
+        } else if (soDien <= 200) {
+            giaDien = 50 * 1500 + 50 * 2000 + (soDien - 100) * 2500;
+        } else {
+            giaDien = 50 * 1500 + 50 * 2000 + 100 * 2500 + (soDien - 200) * 3500;
+        }
+
+        document.getElementById("ketQua").innerHTML = "Giá điện: " + giaDien.toFixed(2) + " VND";
+    }
+</script>
 </body>
 </html>

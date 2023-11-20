@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính lãi ngân hàng</title>
+</head>
+<body>
+<form>
+    <h2>Tính lãi ngân hàng</h2>
+
+    <label for="soTien">Số tiền ban đầu (VNĐ):</label>
+    <input type="number" id="soTien" step="0.01"><br><br>
+
+    <label for="soThang">Số tháng cho vay:</label>
+    <input type="number" id="soThang"><br><br>
+
+    <label for="laiXuat">Lãi xuất hàng tháng (%):</label>
+    <input type="number" id="laiXuat" step="0.01"><br><br>
+
+    <button onclick="tinhLaiNganHang()" type="button">Tính lãi</button>
+    <p id="ketQua"></p>
+</form>
+
+<script>
+    function tinhLaiNganHang() {
+
+        let soTien = parseFloat(document.getElementById("soTien").value);
+        let soThang = parseInt(document.getElementById("soThang").value);
+        let laiXuat = parseFloat(document.getElementById("laiXuat").value);
+
+        let laiNganHang = 0;
+        let tongTien = soTien;
+
+        for (var i = 1; i <= soThang; i++) {
+            laiNganHang += tongTien * (laiXuat / 100);
+            tongTien += tongTien * (laiXuat / 100);
+        }
+
+        document.getElementById("ketQua").innerHTML = "Lãi ngân hàng sau " + soThang + " tháng là: " + laiNganHang.toFixed(2) + " VNĐ";
+    }
+</script>
+</body>
+</html>

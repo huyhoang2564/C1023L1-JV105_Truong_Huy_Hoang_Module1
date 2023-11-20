@@ -1,10 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Giải phương trình bậc 1</title>
 </head>
 <body>
-$END$
+<form>
+    <h2>Giải phương trình bậc 1</h2>
+
+    <label for="heSoA">Nhập hệ số a: </label>
+    <input type="number" id="heSoA" step="0.01"><br><br>
+
+    <label for="heSoB">Nhập hệ số b:</label>
+    <input type="number" id="heSoB" step="0.01"><br><br>
+
+    <button onclick="giaiPhuongTrinh()" type="button">Giải phương trình</button>
+    <p id="ketQua"></p>
+</form>
+
+<script>
+    function giaiPhuongTrinh() {
+
+        let heSoA = parseFloat(document.getElementById("heSoA").value);
+        let heSoB = parseFloat(document.getElementById("heSoB").value);
+
+        if (heSoA === 0) {
+
+            if (heSoB === 0) {
+                document.getElementById("ketQua").innerHTML = "Phương trình vô số nghiệm";
+            } else {
+                document.getElementById("ketQua").innerHTML = "Phương trình vô nghiệm";
+            }
+
+        } else {
+            let nghiem = -heSoB / heSoA;
+            document.getElementById("ketQua").innerHTML = "Nghiệm của phương trình là: " + nghiem.toFixed(2);
+        }
+    }
+</script>
 </body>
 </html>

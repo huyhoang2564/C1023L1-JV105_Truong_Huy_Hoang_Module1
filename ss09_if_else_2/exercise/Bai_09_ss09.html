@@ -1,10 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Kiểm tra cạnh tam giác</title>
 </head>
 <body>
-$END$
+<form>
+    <h2>Kiểm tra cạnh tam giác</h2>
+
+    <label for="canhA">Nhập cạnh a:</label>
+    <input type="number" id="canhA" step="0.01"><br><br>
+
+    <label for="canhB">Nhập cạnh b:</label>
+    <input type="number" id="canhB" step="0.01"><br><br>
+
+    <label for="canhC">Nhập cạnh c:</label>
+    <input type="number" id="canhC" step="0.01"><br><br>
+
+    <button onclick="kiemTraCanhTamGiac()" type="button">Kiểm tra</button>
+    <p id="ketQua"></p>
+</form>
+
+<script>
+    function kiemTraCanhTamGiac() {
+        let canhA = parseFloat(document.getElementById("canhA").value);
+        let canhB = parseFloat(document.getElementById("canhB").value);
+        let canhC = parseFloat(document.getElementById("canhC").value);
+
+        if (canhA > 0 && canhB > 0 && canhC > 0 && canhA + canhB > canhC && canhB + canhC > canhA && canhA + canhC > canhB) {
+            document.getElementById("ketQua").innerHTML = "Các số " + canhA + ", " + canhB + ", " + canhC + " là cạnh của một tam giác.";
+
+        } else {
+            document.getElementById("ketQua").innerHTML = "Các số " + canhA + ", " + canhB + ", " + canhC + " không phải là cạnh của một tam giác.";
+        }
+    }
+</script>
 </body>
 </html>

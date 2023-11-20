@@ -1,10 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Kiểm tra tuổi</title>
 </head>
 <body>
-$END$
+<form>
+    <label for="tuoi">Nhập tuổi:</label>
+    <input type="number" id="tuoi" step="1"><br>
+
+    <button onclick="kiemTraTuoi()" type="button">Kiểm tra</button>
+</form>
+
+<p id="ketQua"></p>
+
+<script>
+    function kiemTraTuoi() {
+
+        let tuoi = parseInt(document.getElementById("tuoi").value);
+
+        if (tuoi > 0 && tuoi <= 120) {
+            document.getElementById("ketQua").innerHTML = "Đúng, " + tuoi + " là tuổi của một người.";
+
+        } else {
+            document.getElementById("ketQua").innerHTML = "Sai, " + tuoi + " không phải là tuổi của một người.";
+        }
+    }
+</script>
 </body>
 </html>
