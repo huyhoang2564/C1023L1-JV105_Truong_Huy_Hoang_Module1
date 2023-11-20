@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiểm tra tuổi học lớp 10</title>
+</head>
+<body>
+<form>
+    <h2>Kiểm tra tuổi học lớp 10</h2>
+
+    <label for="old"> Nhập vào số tuổi: </label>
+    <input id="old" type="text"><br><br>
+
+    <button onclick="check()" type="button">check</button>
+    <p id="result"></p>
+
+</form>
+<script>
+    function check()
+    {
+        let old = +document.getElementById("old").value
+        if(old === 15) {
+            document.getElementById("result").innerHTML ="Đủ tuổi";
+        }
+        else if(old>15)
+        {
+            document.getElementById("result").innerHTML ="Vượt quá tuổi";
+        }
+        else
+        {
+            document.getElementById("result").innerHTML ="Chưa đủ tuổi";
+        }
+    }
+</script>
+</body>
+</html>

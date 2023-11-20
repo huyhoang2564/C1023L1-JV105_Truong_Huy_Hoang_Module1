@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="543427a1-e2f6-4b7f-89c7-1a8fcb418b1a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../ss05_html_form_table/exercise/exercise 1/sở thích của bạn.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bai_01_ss08.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bai_02_ss08.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bai_04_ss08.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bai_05_ss08.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bai_06_ss08.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tính chỉ số cân nặng.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tính số ngày trong tháng.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="2YQLlKW6Yt4D32vHuEjq6d1HvcR" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "E:/Module 1 - CODEGYM/C1023L1-JV105_Truong_Huy_Hoang_Module1/ss08_if_else_1/exercise 1",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="543427a1-e2f6-4b7f-89c7-1a8fcb418b1a" name="Changes" comment="" />
+      <created>1700453007167</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1700453007167</updated>
+      <workItem from="1700453008314" duration="600000" />
+      <workItem from="1700454442698" duration="6000" />
+      <workItem from="1700454459311" duration="168000" />
+      <workItem from="1700457336405" duration="4767000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

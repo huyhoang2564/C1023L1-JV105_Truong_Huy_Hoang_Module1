@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiểm tra phép toán chia</title>
+</head>
+<body>
+<form>
+    <h2> Kiểm tra phép toán chia</h2>
+
+    <label for="a">Nhập một số a:</label>
+    <input type="text" id="a"><br><br>
+
+    <label for="b">Nhập một số b:</label>
+    <input type="text" id="b"><br><br>
+
+    <button onclick="check()" type="button">Kiểm tra kết quả</button>
+    <p id="result"></p>
+</form>
+<script>
+    function check()
+    {
+        let a = +document.getElementById("a").value
+        let b = +document.getElementById("b").value
+        if (a % b === 0) {
+            document.getElementById("result").innerHTML = a + " chia hết cho " + b;
+        } else {
+            document.getElementById("result").innerHTML = a + " không chia hết cho " + b;
+        }
+    }
+</script>
+</body>
+</html>

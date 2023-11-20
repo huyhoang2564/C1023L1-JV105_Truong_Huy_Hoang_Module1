@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính hoa hồng</title>
+</head>
+<body>
+<form>
+    <label for="doanhSo">Doanh số bán hàng:</label>
+    <input type="number" id="doanhSo" step="0.01"><br>
+
+    <button onclick="tinhHoaHong()" type="button">Tính hoa hồng</button>
+    <p id="ketQua"></p>
+
+</form>
+
+<script>
+    function tinhHoaHong() {
+        let doanhSo = parseFloat(document.getElementById("doanhSo").value);
+        let hoaHong = 0;
+
+        if (doanhSo >= 100000000) {
+            hoaHong = doanhSo * 0.1;
+
+        } else if (doanhSo >= 50000000) {
+            hoaHong = doanhSo * 0.07;
+
+        } else if (doanhSo >= 20000000) {
+            hoaHong = doanhSo * 0.05;
+
+        } else if (doanhSo >= 10000000) {
+            hoaHong = doanhSo * 0.03;
+
+        } else {
+            hoaHong = doanhSo * 0.01;
+        }
+
+        document.getElementById("ketQua").innerHTML = "Hoa hồng nhận được là: " + hoaHong.toFixed(2) + " đồng";
+    }
+</script>
+</body>
+</html>
