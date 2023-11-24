@@ -1,37 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="4c45a9ed-eea3-483a-b521-a9fd604bce7b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Tạo bảng cờ vua.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss07_variable_operator_datatype/exercise/Chuyển đổi tiền tệ.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss10_vong_lap_1/exercise/Kiểm tra số nguyên tố.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss10_vong_lap_1/exercise/Sinh bảng cửu chương.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss10_vong_lap_1/exercise/ss10_Bai01.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss10_vong_lap_1/exercise/ss10_Bai02.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss10_vong_lap_1/exercise/ss10_Bai03.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss10_vong_lap_1/exercise/ss10_Bai05.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss11_vong_lap_2/exercise/ss10_bai4.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss11_vong_lap_2/exercise/ss10_bai6.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss11_vong_lap_2/exercise/ss10_bai7.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss11_vong_lap_2/exercise/ss10_bai8.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss11_vong_lap_2/exercise/ss11_bai2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss11_vong_lap_2/exercise/ss11_bai3.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../exercise 1/sở thích của bạn.html" beforeDir="false" afterPath="$PROJECT_DIR$/../exercise 1/sở thích của bạn.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../exercise 1/Đăng ký học viên.html" beforeDir="false" afterPath="$PROJECT_DIR$/../exercise 1/Đăng ký học viên.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../ss08_if_else_1/exercise/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss08_if_else_1/exercise/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss09_if_else_2/exercise/abcd.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss09_if_else_2/exercise/Bai_12_ss09.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 5
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
   <component name="ProjectId" id="2YRHo5igG7mp4bHuRHSg2LxeEip" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "E:/Module 1 - CODEGYM/C1023L1-JV105_Truong_Huy_Hoang_Module1/ss05_html_form_table/exercise",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/Module 1 - CODEGYM/C1023L1-JV105_Truong_Huy_Hoang_Module1/ss09_if_else_2/exercise&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -41,6 +71,8 @@
       <option name="presentableId" value="Default" />
       <updated>1700481643346</updated>
       <workItem from="1700481644366" duration="13000" />
+      <workItem from="1700821396217" duration="2436000" />
+      <workItem from="1700825062631" duration="301000" />
     </task>
     <servers />
   </component>
