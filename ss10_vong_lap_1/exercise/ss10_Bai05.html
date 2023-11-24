@@ -1,10 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Tính tổng 20 số đầu tiên trong Fibonacci</title>
 </head>
 <body>
-$END$
+<script>
+    let n = 20; // Số lượng số Fibonacci cần tính tổng
+    let a = 0;
+    let b = 1;
+    sum = 0;
+
+    for (let i = 1; i <= n; i++) {
+        sum += a;
+        let temp = a + b;
+        a = b;
+        b = temp;
+    }
+
+   document.write("Tổng của 20 số Fibonacci đầu tiên: " + sum);
+</script>
+
 </body>
 </html>

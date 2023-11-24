@@ -1,10 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Sinh bảng cửu chương</title>
 </head>
 <body>
-$END$
+    <h2>Sinh bảng cửu chương</h2>
+    <table id="multiplication-table" border="1" style="width: 1000px; height: 50px" ></table>
+    <script>
+       // Tạo một biến để chứa nội dung bảng cửu chương
+       let table = '';
+
+       // Lặp qua các số từ 1 đến 9 để tạo bảng cửu chương
+       for (let i = 1; i <= 9; i++) {
+       // Tạo một dòng mới trong bảng
+       table += '<tr>';
+
+        // Lặp qua các số từ 1 đến 10 để tạo các ô trong dòng
+        for (let j = 1; j <= 10; j++) {
+        // Tính tích của hai số i và j
+        let product = i * j;
+
+        // Thêm ô mới vào dòng với giá trị tích
+        table += '<td>' + i + ' x ' + j + ' = ' + product + '</td>';
+        }
+
+        // Đóng dòng trong bảng
+        table += '</tr>';
+        }
+
+    // Lấy phần tử có id là "multiplication-table" trong HTML
+    let tableElement = document.getElementById('multiplication-table');
+
+    // Gán nội dung bảng cửu chương vào phần tử
+    tableElement.innerHTML = table;
+    </script>
 </body>
 </html>

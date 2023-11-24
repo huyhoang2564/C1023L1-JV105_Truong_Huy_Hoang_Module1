@@ -1,10 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Hiển thị ra 20 số trong dãy fibonacci đầu tiên</title>
 </head>
 <body>
-$END$
+<script>
+    let n = 20; // Số lượng số Fibonacci cần hiển thị
+    let a = 0;
+    let b = 1;
+
+    document.write("Dãy Fibonacci: ");
+
+    for (let i = 1; i <= n; i++) {
+        document.write(a);
+        let temp = a + b;
+        a = b;
+        b = temp;
+    }
+</script>
 </body>
 </html>

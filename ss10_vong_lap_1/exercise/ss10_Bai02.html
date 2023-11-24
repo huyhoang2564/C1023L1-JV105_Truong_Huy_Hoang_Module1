@@ -1,10 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Thông tin nhiệt độ</title>
 </head>
 <body>
-$END$
+<script>
+  let temperature = +prompt("Nhập nhiệt độ hiện tại: ");
+
+  if (temperature > 100) {
+    alert("Hãy giảm nhiệt độ");
+  } else if (temperature < 20) {
+    alert("Hãy tăng nhiệt độ");
+  }
+</script>
 </body>
 </html>
