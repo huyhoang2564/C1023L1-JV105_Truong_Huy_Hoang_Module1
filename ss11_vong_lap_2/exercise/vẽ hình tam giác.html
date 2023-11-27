@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    /**
+     * Đề bài: Nhập vào một số nguyên x. Vẽ hình tam giác dấu * có dạng như ví dụ dưới đây.
+     * ***
+     * **
+     * *
+     */
+    function main() {
+        const n = Number(prompt("Nhập n", 1))
+
+        for (let i = n; i >= 1; i--) {
+            let s = ''
+            for (let j = 1; j <= i; j++) {
+                s = s + '*'
+            }
+            console.log(s)
+        }
+    }
+    main()
+</script>
+</body>
+</html>

@@ -1,10 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+    function printTriangle(height, position) {
+        if (position === "top-left") {
+            for (let i = 0; i < height; i++) {
+                let row = "";
+                for (let j = 0; j <= i; j++) {
+                    row += "*";
+                }
+                console.log(row);
+            }
+        } else if (position === "top-right") {
+            for (let i = 0; i < height; i++) {
+                let row = "";
+                for (let j = 0; j < height - i - 1; j++) {
+                    row += " ";
+                }
+                for (let k = 0; k <= i; k++) {
+                    row += "*";
+                }
+                console.log(row);
+            }
+        } else if (position === "bottom-left") {
+            for (let i = 0; i < height; i++) {
+                let row = "";
+                for (var j = 0; j < height - i; j++) {
+                    row += "*";
+                }
+                console.log(row);
+            }
+        } else if (position === "bottom-right") {
+            for (let i = 0; i < height; i++) {
+                let row = "";
+                for (let j = 0; j < i; j++) {
+                    row += " ";
+                }
+                for (let k = 0; k < height - i; k++) {
+                    row += "*";
+                }
+                console.log(row);
+            }
+        }
+    }
+
+    let height = 5; // Chiều cao của tam giác
+    let position = "top-right"; // Vị trí của góc vuông
+    printTriangle(height, position);
+</script>
+
 </body>
 </html>

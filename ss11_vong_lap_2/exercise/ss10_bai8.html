@@ -1,10 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Game Đoán Số</title>
 </head>
 <body>
-$END$
+
+<h1>Game Đoán Số</h1>
+<button id="play-button">Chơi</button>
+
+<script>
+    // Lấy phần tử button từ HTML
+    const playButton = document.getElementById('play-button');
+
+    // Gán sự kiện click cho button
+    playButton.addEventListener('click', startGame);
+
+    function startGame() {
+        // Nhập khoảng giá trị muốn đoán
+        const range = +prompt("Nhập khoảng giá trị muốn đoán (ví dụ: 1-100):");
+
+        if (range) {
+            const [min, max] = range.split('-').map(Number);
+
+            // Kiểm tra nếu giá trị đầu vào hợp lệ
+            if (!isNaN(min) && !isNaN(max) && min < max) {
+                const randomNumber = Math.floor(Math.random() * (max - min + 1)) + min;
+                let attempts = 3;
+
+                while (attempts > 0) {
+                    const guess = prompt("Hãy đoán số trong khoảng " + range + ":");
+
+                    if (guess) {
+                        const userGuess = Number(guess);
+
+                        // Kiểm tra tính hợp lệ của số đoán
+                        if (!isNaN(userGuess) && userGuess >= min && userGuess <= max) {
+                            if (userGuess === randomNumber) {
+                                alert("Chúc mừng, bạn đã đoán đúng!");
+                                break;
+                            } else if (userGuess > randomNumber) {
+                                alert("Số bạn đoán lớn hơn số ngẫu nhiên. Còn " + (attempts - 1) + " lượt.");
+                            } else {
+                                alert("Số bạn đoán nhỏ hơn số ngẫu nhiên. Còn " + (attempts - 1) + " lượt.");
+                            }
+
+                            attempts--;
+                        } else {
+                            alert("Giá trị đoán không hợp lệ. Vui lòng nhập một số trong khoảng " + range + ".");
+                        }
+                    } else {
+                        break;
+                    }
+                }
+
+                if (attempts === 0) {
+                    alert("Bạn đã hết lượt. Số ngẫu nhiên là " + randomNumber + ".");
+                }
+            } else {
+                alert("Khoảng giá trị không hợp lệ. Vui lòng nhập lại.");
+            }
+        }
+    }
+</script>
 </body>
 </html>

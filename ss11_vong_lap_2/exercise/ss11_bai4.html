@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let width = +prompt("Nhập chiều rộng của hình chữ nhật: "); // Chiều rộng của hình chữ nhật
+    let height = +prompt("Nhập chiều cao của hình chữ nhật: "); // Chiều cao của hình chữ nhật
+    printRectangle(width, height);
+
+    function printRectangle(width, height) {
+        for (let i = 0; i < height; i++) {
+            for (let j = 0; j < width; j++) {
+                if (i === 0 || i === width - 1 || j === 0 || j === height - 1 ){
+                    document.write("* ");
+                }else {
+                    document.write(" ")
+                    }
+                }
+            }
+    }
+
+</script>
+</body>
+</html>
