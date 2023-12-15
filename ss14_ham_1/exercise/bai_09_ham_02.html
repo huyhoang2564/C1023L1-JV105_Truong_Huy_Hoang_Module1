@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+   <script>
+
+       function countCharacterOccurrences(arr, char) {
+           let count = 0;
+
+           for (let i = 0; i < arr.length; i++) {
+               if (arr[i] === char) {
+                   count++;
+               }
+           }
+
+           return count > 0 ? count : -1;
+       }
+
+       // Ví dụ sử dụng hàm
+       const arr = ['a', 'b', 'c', 'd', 'e', 'a', 'b', 'a'];
+       const char = 'a';
+
+       const occurrences = countCharacterOccurrences(arr, char);
+       console.log(`Số lần xuất hiện của ký tự "${char}" trong mảng là: ${occurrences}`);
+
+
+   </script>
+</body>
+</html>

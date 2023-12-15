@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+   <script>
+
+       function calculateArea(radius) {
+           return Math.PI * radius * radius;
+       }
+
+       function calculatePerimeter(radius) {
+           return 2 * Math.PI * radius;
+       }
+       let radius = +prompt("Nhập bán kính hình tròn: ")
+       let area = calculateArea(radius);
+       let perimeter = calculatePerimeter(radius);
+       console.log(area);
+       console.log(perimeter);
+
+
+   </script>
+</body>
+</html>

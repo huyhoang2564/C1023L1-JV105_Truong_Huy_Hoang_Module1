@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GPTGO - Tìm chòm sao</title>
+    <script>
+        // Mảng các ngôi sao
+        var stars = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"];
+        // Mảng các chòm sao tương ứng
+        var constellations = ["Ursa Minor", "Taurus", "Cygnus", "Lyra", "Aquila", "Ursa Major", "Leo"];
+
+        // Hàm tìm chòm sao dựa trên tên ngôi sao
+        function findConstellation(starName) {
+            for (var i = 0; i < stars.length; i++) {
+                if (stars[i] === starName) {
+                    return constellations[i];
+                }
+            }
+            return null; // Trả về null nếu không tìm thấy
+        }
+
+        // Hàm xử lý khi người dùng nhập vào tên ngôi sao
+        function processUserInput() {
+            var starName = prompt("Nhập tên của ngôi sao:");
+            var constellation = findConstellation(starName);
+
+            if (constellation) {
+                document.getElementById("result").innerHTML = "Ngôi sao \"" + starName + "\" thuộc chòm sao \"" + constellation + "\".";
+            } else {
+                document.getElementById("result").innerHTML = "Không tìm thấy ngôi sao \"" + starName + "\".";
+            }
+        }
+    </script>
+</head>
+<body>
+<h1>GPTGO - Tìm chòm sao</h1>
+<p>Nhập tên của ngôi sao để tìm chòm sao tương ứng:</p>
+<button onclick="processUserInput()">Tìm</button>
+<p id="result"></p>
+</body>
+</html>
+
