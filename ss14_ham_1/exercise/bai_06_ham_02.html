@@ -11,7 +11,7 @@
             return Number.isInteger(number) && number > 0;
         }
 
-        const number = -5;
+        const number = +prompt("Nhập số: ");
         const result = isPositiveInteger(number);
         console.log(result); // Output: false
 
