@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task 4 _ Bài 2</title>
+</head>
+<body>
+<script>
+    function countUniqueCharacters(str) {
+        let charCount = {};
+
+        // Duyệt qua từng ký tự trong xâu
+        for (let char of str) {
+            // Nếu ký tự đã tồn tại trong đối tượng charCount, tăng số lần xuất hiện lên 1
+            if (charCount[char]) {
+                charCount[char]++;
+            } else {
+                // Nếu ký tự chưa tồn tại trong đối tượng charCount, thêm ký tự vào đối tượng và gán số lần xuất hiện là 1
+                charCount[char] = 1;
+            }
+        }
+
+        // Đếm số lượng ký tự khác nhau bằng cách đếm số thuộc tính trong đối tượng charCount
+        let uniqueCount = Object.keys(charCount).length;
+
+        return uniqueCount;
+    }
+
+    let str = prompt("Nhập xâu kí tự:");
+    let result = countUniqueCharacters(str);
+    console.log(`Số lượng ký tự khác nhau trong xâu: ${result}`);
+</script>
+</body>
+</html>

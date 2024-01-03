@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task 1 _ Bài 1</title>
+</head>
+<body>
+<script>
+    function tinhThueThuNhap(luong) {
+        if (luong >= 15000000) {
+            return luong * 0.2;
+        } else if (luong >= 7000000) {
+            return luong * 0.1;
+        } else {
+            return luong * 0.05;
+        }
+    }
+
+    function tinhLuongRong(luong) {
+        let thueThuNhap = tinhThueThuNhap(luong);
+        return luong - thueThuNhap;
+    }
+
+    // Nhập lương từ người dùng
+    let luong = parseFloat(prompt("Nhập lương của nhân viên (VNĐ):"));
+
+    // Tính thuế thu nhập và lương ròng
+    let thueThuNhap = tinhThueThuNhap(luong);
+    let luongRong = tinhLuongRong(luong);
+
+    // Hiển thị kết quả
+    alert("Thuế thu nhập: " + thueThuNhap.toLocaleString() + " VNĐ");
+    alert("Lương ròng: " + luongRong.toLocaleString() + " VNĐ");
+</script>
+</body>
+</html>

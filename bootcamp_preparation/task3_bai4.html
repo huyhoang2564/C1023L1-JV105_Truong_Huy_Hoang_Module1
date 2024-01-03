@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task 3 _ Bài 4</title>
+</head>
+<body>
+<script>
+    function printMenu() {
+        console.log("Menu:");
+        console.log("1. Cafe");
+        console.log("2. Cam vắt");
+        console.log("3. Nước ép cà rốt");
+        console.log("4. Nước ép cà chua");
+        console.log("5. Nước lọc");
+        console.log("6. Nước dừa");
+        console.log("7. Thoát gọi món");
+    }
+
+    function calculatePrice(choice, quantity) {
+        let price = 0;
+
+        switch (choice) {
+            case 1:
+                price = 10;
+                break;
+            case 2:
+                price = 15;
+                break;
+            case 3:
+                price = 12;
+                break;
+            case 4:
+                price = 13;
+                break;
+            case 5:
+                price = 5;
+                break;
+            case 6:
+                price = 8;
+                break;
+            default:
+                console.log("Lựa chọn không hợp lệ. Vui lòng chọn lại.");
+                break;
+        }
+
+        if (price > 0) {
+            let total = price * quantity;
+            console.log(`Tổng số tiền cần trả: ${total}`);
+        }
+    }
+
+    function orderDrink() {
+        let choice = 0;
+        let quantity = 0;
+
+        do {
+            printMenu();
+            choice = parseInt(prompt("Chọn một số từ menu (1-7):"));
+
+            if (choice >= 1 && choice <= 6) {
+                quantity = parseInt(prompt("Nhập số lượng:"));
+                calculatePrice(choice, quantity);
+            } else if (choice !== 7) {
+                console.log("Lựa chọn không hợp lệ. Vui lòng chọn lại.");
+            }
+        } while (choice !== 7);
+    }
+
+    orderDrink();
+</script>
+</body>
+</html>

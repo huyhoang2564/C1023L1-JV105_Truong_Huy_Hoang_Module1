@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task 5 _ Bài 3</title>
+</head>
+<body>
+<script>
+    function findMinMaxValues(matrix) {
+        let min = matrix[0][0];
+        let max = matrix[0][0];
+
+        // Duyệt qua từng hàng trong mảng 2 chiều
+        for (let i = 0; i < matrix.length; i++) {
+            // Duyệt qua từng phần tử trong hàng
+            for (let j = 0; j < matrix[i].length; j++) {
+                // So sánh giá trị hiện tại với giá trị lớn nhất và nhỏ nhất
+                if (matrix[i][j] < min) {
+                    min = matrix[i][j];
+                }
+                if (matrix[i][j] > max) {
+                    max = matrix[i][j];
+                }
+            }
+        }
+
+        return { min, max };
+    }
+
+    // Ví dụ một mảng 2 chiều
+    let matrix = [
+        [5, 2, 9],
+        [1, 7, 3],
+        [6, 4, 8]
+    ];
+
+    let result = findMinMaxValues(matrix);
+    console.log(`Giá trị nhỏ nhất: ${result.min}`);
+    console.log(`Giá trị lớn nhất: ${result.max}`);
+</script>
+</body>
+</html>

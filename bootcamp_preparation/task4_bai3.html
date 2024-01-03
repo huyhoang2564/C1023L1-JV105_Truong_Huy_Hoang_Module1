@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task 4 _ Bài 3</title>
+</head>
+<body>
+<script>
+    function demKiTuChung(xau1, xau2) {
+        const set1 = new Set(xau1);
+        const set2 = new Set(xau2);
+        let count = 0;
+
+        for (const char of set1) {
+            if (set2.has(char)) {
+                count++;
+            }
+        }
+
+        return count;
+    }
+
+    // Ví dụ sử dụng:
+    const xau1 = prompt("Nhập kí tự ở xâu 1: ");
+    const xau2 = prompt("Nhập kí tự ở xâu 2");
+    const kiTuChung = demKiTuChung(xau1, xau2);
+    console.log("Số kí tự chung: " + kiTuChung);
+</script>
+</body>
+</html>

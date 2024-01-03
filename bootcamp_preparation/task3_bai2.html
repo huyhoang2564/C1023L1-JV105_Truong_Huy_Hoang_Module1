@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task 3 _ Bài 2</title>
+</head>
+<body>
+<script>
+    function missingValue(A, B) {
+        const setA = new Set(A);
+        const setB = new Set(B);
+        const result = [];
+
+        for (const value of setB) {
+            if (!setA.has(value)) {
+                result.push(value);
+            }
+        }
+
+        return result;
+    }
+
+    // Nhập các số trong mảng A từ người dùng
+    let inputA = prompt("Nhập các số trong mảng A, cách nhau bằng dấu phẩy: ");
+    let A = inputA.split(",").map(Number);
+
+    // Nhập các số trong mảng B từ người dùng
+    let inputB = prompt("Nhập các số trong mảng B, cách nhau bằng dấu phẩy: ");
+    let B = inputB.split(",").map(Number);
+
+    // Tìm phần tử thiếu trong mảng và hiển thị kết quả
+    let missingValues = missingValue(A, B);
+    console.log("Các phần tử thiếu: " + missingValues);
+</script>
+</body>
+</html>

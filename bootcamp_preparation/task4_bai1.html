@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task 4 _ Bài 1</title>
+</head>
+<body>
+<script>
+    function chuanHoaXauKyTu(str) {
+        // Chuyển chuỗi thành chữ thường, loại bỏ dấu cách đầu và cuối chuỗi
+        str = str.toLowerCase().trim();
+
+        // Chuyển chuỗi thành mảng các từ
+        const words = str.split(" ");
+
+        // Chuẩn hóa từng từ trong mảng
+        const normalizedWords = words.map((word) => {
+            // Chuyển chữ cái đầu tiên của từ thành chữ in hoa
+            const firstLetter = word.charAt(0).toUpperCase();
+
+            // Lấy phần còn lại của từ
+            const restOfWord = word.slice(1);
+
+            // Kết hợp chữ cái đầu tiên in hoa và phần còn lại của từ
+            return firstLetter + restOfWord;
+        });
+
+        // Kết hợp các từ đã chuẩn hóa thành một chuỗi mới, cách nhau bởi một dấu cách
+        const normalizedStr = normalizedWords.join(" ");
+
+        return normalizedStr;
+    }
+
+    function timTuDaiNhat(str) {
+        const words = str.split(" ");
+
+        let longestWord = "";
+        for (const word of words) {
+            if (word.length > longestWord.length) {
+                longestWord = word;
+            }
+        }
+
+        return longestWord;
+    }
+
+    function main() {
+        const inputStr = prompt("Nhập một xâu ký tự: ");
+
+        console.log("Xâu trước khi chuẩn hóa: " + inputStr);
+
+        const normalizedStr = chuanHoaXauKyTu(inputStr);
+        console.log("Xâu sau khi chuẩn hóa: " + normalizedStr);
+
+        const longestWord = timTuDaiNhat(inputStr);
+        console.log("Từ dài nhất trong xâu: " + longestWord);
+    }
+
+    // Gọi hàm main để chạy chương trình
+    main();
+</script>
+</body>
+</html>

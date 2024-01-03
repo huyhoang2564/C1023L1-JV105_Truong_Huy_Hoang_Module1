@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task 2 _ Bài 3</title>
+</head>
+<body>
+<script>
+    function veTamGiacCanRong(chieuCao) {
+        let ketQua = '';
+
+        // Vẽ hàng đầu tiên của tam giác
+        for (let i = 1; i <= chieuCao; i++) {
+            for (let j = 1; j <= chieuCao - i; j++) {
+                ketQua += ' ';
+            }
+            ketQua += '*';
+
+            if (i > 1) {
+                for (let k = 1; k <= 2 * i - 3; k++) {
+                    ketQua += ' ';
+                }
+                ketQua += '*';
+            }
+
+            ketQua += '\n';
+        }
+
+        // Vẽ hàng cuối cùng của tam giác
+        for (let i = 1; i <= 2 * chieuCao - 1; i++) {
+            ketQua += '*';
+        }
+
+        return ketQua;
+    }
+
+    // Sử dụng prompt để nhập chiều cao từ người dùng
+    let chieuCao = parseInt(prompt('Nhập chiều cao của tam giác: '));
+
+    // Gọi hàm veTamGiacCanRong và in kết quả ra màn hình
+    console.log(veTamGiacCanRong(chieuCao));
+</script>
+</body>
+</html>

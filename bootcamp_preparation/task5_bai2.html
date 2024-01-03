@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task  5 _ Bài 2</title>
+</head>
+<body>
+<script>
+    function laSoNguyenTo(number) {
+        if (number < 2) {
+            return false;
+        }
+
+        for (let i = 2; i <= Math.sqrt(number); i++) {
+            if (number % i === 0) {
+                return false;
+            }
+        }
+
+        return true;
+    }
+
+    function lietKeSoNguyenToTrongMang(mang) {
+        const primeNumbers = [];
+
+        for (let i = 0; i < mang.length; i++) {
+            const currentArray = mang[i];
+            for (let j = 0; j < currentArray.length; j++) {
+                const number = currentArray[j];
+                if (laSoNguyenTo(number)) {
+                    primeNumbers.push(number);
+                }
+            }
+        }
+
+        return primeNumbers;
+    }
+
+    function demSoNguyenToTrongMang(mang) {
+        const primeNumbers = lietKeSoNguyenToTrongMang(mang);
+        return primeNumbers.length;
+    }
+
+    function nhapMangTuBanPhim() {
+        const mang = [];
+        const soLuongMang = parseInt(prompt("Nhập số lượng mảng: "));
+
+        for (let i = 0; i < soLuongMang; i++) {
+            const currentArray = [];
+            const soLuongPhanTu = parseInt(prompt(`Nhập số lượng phần tử trong mảng thứ ${i + 1}: `));
+
+            for (let j = 0; j < soLuongPhanTu; j++) {
+                const phanTu = parseInt(prompt(`Nhập phần tử thứ ${j + 1} của mảng thứ ${i + 1}: `));
+                currentArray.push(phanTu);
+            }
+
+            mang.push(currentArray);
+        }
+
+        return mang;
+    }
+
+    // Ví dụ sử dụng:
+    const mang2D = nhapMangTuBanPhim();
+    console.log("Mảng 2 chiều: ", mang2D);
+
+    const soNguyenToTrongMang = lietKeSoNguyenToTrongMang(mang2D);
+    console.log("Các số nguyên tố trong mảng: ", soNguyenToTrongMang);
+
+    const soLuongNguyenToTrongMang = demSoNguyenToTrongMang(mang2D);
+    console.log("Số lượng số nguyên tố trong mảng: ", soLuongNguyenToTrongMang);
+</script>
+</body>
+</html>

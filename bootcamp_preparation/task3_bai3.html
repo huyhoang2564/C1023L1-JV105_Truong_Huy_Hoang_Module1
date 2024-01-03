@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task 3 _ Bài 3</title>
+</head>
+<body>
+<script>
+    function maxFraction(numerators, denominators) {
+        let maxIndex = 0;
+        let maxFraction = numerators[0] / denominators[0];
+
+        for (let i = 1; i < numerators.length; i++) {
+            let fraction = numerators[i] / denominators[i];
+            if (fraction > maxFraction) {
+                maxFraction = fraction;
+                maxIndex = i;
+            }
+        }
+
+        return maxIndex;
+    }
+
+    // Hàm để nhập danh sách phân số từ người dùng
+    function inputFractions() {
+        let n = parseInt(prompt("Nhập số lượng phân số:"));
+        let numerators = [];
+        let denominators = [];
+
+        for (let i = 0; i < n; i++) {
+            let numerator = parseInt(prompt(`Nhập tử số của phân số thứ ${i + 1}:`));
+            let denominator = parseInt(prompt(`Nhập mẫu số của phân số thứ ${i + 1}:`));
+            numerators.push(numerator);
+            denominators.push(denominator);
+        }
+
+        return [numerators, denominators];
+    }
+
+    let [numerators, denominators] = inputFractions();
+    let result = maxFraction(numerators, denominators);
+    console.log(result);
+</script>
+</body>
+</html>

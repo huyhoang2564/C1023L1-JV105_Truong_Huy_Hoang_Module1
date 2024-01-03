@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task 5 _ Bài 1</title>
+</head>
+<body>
+<script>
+    function sumEvenNumbers(matrix) {
+        let sum = 0;
+
+        // Duyệt qua từng hàng trong ma trận
+        for (let i = 0; i < matrix.length; i++) {
+            // Duyệt qua từng phần tử trong hàng
+            for (let j = 0; j < matrix[i].length; j++) {
+                // Kiểm tra xem phần tử có là số chẵn hay không
+                if (matrix[i][j] % 2 === 0) {
+                    // Nếu là số chẵn, cộng vào tổng
+                    sum += matrix[i][j];
+                }
+            }
+        }
+
+        return sum;
+    }
+
+    let m = parseInt(prompt("Nhập số hàng (m):"));
+    let n = parseInt(prompt("Nhập số cột (n):"));
+
+    // Nhập ma trận từ bàn phím
+    let matrix = [];
+    for (let i = 0; i < m; i++) {
+        matrix[i] = [];
+        for (let j = 0; j < n; j++) {
+            matrix[i][j] = parseInt(prompt(`Nhập phần tử ở vị trí (${i}, ${j}):`));
+        }
+    }
+
+    let result = sumEvenNumbers(matrix);
+    console.log(`Tổng các số chẵn trong ma trận là: ${result}`);
+</script>
+</body>
+</html>

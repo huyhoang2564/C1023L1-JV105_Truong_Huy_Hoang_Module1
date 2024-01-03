@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task 2 _ Bài 2</title>
+</head>
+<body>
+<script>
+    function veTamGiacCan(chieuCao) {
+        let ketQua = '';
+
+        for (let i = 1; i <= chieuCao; i++) {
+
+            // Tạo khoảng trắng để căn chỉnh tam giác
+            for (let j = 1; j <= chieuCao - i; j++) {
+                ketQua += ' ';
+            }
+
+            // Vẽ dấu '*' tạo nên tam giác
+            for (let k = 1; k <= 2 * i - 1; k++) {
+                ketQua += '*';
+            }
+
+            ketQua += '\n'; // Xuống dòng sau khi hoàn thành một hàng
+        }
+
+        return ketQua;
+    }
+
+    // Sử dụng prompt để nhập chiều cao từ người dùng
+    let chieuCao = parseInt(prompt('Nhập chiều cao của tam giác: '));
+
+    // Gọi hàm veTamGiacCan và in kết quả ra màn hình
+    console.log(veTamGiacCan(chieuCao));
+</script>
+</body>
+</html>

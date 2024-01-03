@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task 2 _ Bài 1</title>
+</head>
+<body>
+<script>
+    function veTamGiacVuongCanRong(chieuCao) {
+        for (let i = 1; i <= chieuCao; i++) {
+            let row = '';
+
+            if (i === 1 || i === chieuCao) {
+
+                // In dòng đầu tiên và dòng cuối cùng
+                for (let j = 1; j <= i; j++) {
+                    row += '* ';
+                }
+            } else {
+                // In các dòng ở giữa
+                row += '* ';
+
+                for (let j = 2; j <= i - 1; j++) {
+                    row += '  ';
+                }
+
+                row += '* ';
+            }
+
+            console.log(row);
+        }
+    }
+
+    // Nhập chiều cao từ người dùng
+    let chieuCao = parseInt(prompt("Nhập chiều cao của tam giác vuông cân: "));
+
+    // Vẽ tam giác vuông cân rỗng
+    veTamGiacVuongCanRong(chieuCao);
+
+</script>
+</body>
+</html>

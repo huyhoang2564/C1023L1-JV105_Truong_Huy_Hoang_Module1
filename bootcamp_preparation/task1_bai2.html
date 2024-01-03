@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task 1 _ Bài 2</title>
+</head>
+<body>
+<script>
+    function kiemTraNguyenAm(kyTu) {
+        let nguyenAm = ['a', 'e', 'i', 'o', 'u'];
+        return nguyenAm.includes(kyTu.toLowerCase());
+    }
+
+    // Nhập ký tự từ người dùng
+    let kyTu = prompt("Nhập một ký tự trong bảng chữ cái tiếng Anh:");
+
+    // Kiểm tra xem ký tự là nguyên âm hay phụ âm
+    if (kiemTraNguyenAm(kyTu)) {
+        alert(kyTu + " là một nguyên âm.");
+    } else {
+        alert(kyTu + " là một phụ âm.");
+    }
+</script>
+</body>
+</html>
